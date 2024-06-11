@@ -15,7 +15,7 @@
 title: pthmz's Blog
 # email: your-email@example.com
 description: >- # 这意味着忽略换行符，直到 "baseurl:"
-  在此处为您的新网站撰写精彩的描述。您可以在 _config.yml 中编辑此行。它将显示在您的文档 head meta 中以及您的 feed.xml 网站描述中。
+  托管在Github上的技术博客
 baseurl: "" # 您网站的子路径，例如 /blog
 url: "https://pthmz.github.io" # 您网站的基本主机名和协议，例如 http://example.com
 # twitter_username: jekyllrb
