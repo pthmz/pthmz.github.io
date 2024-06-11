@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "欢迎使用 Jekyll！"
+title:  "欢迎使用 Jekyll"
 date:   2024-03-26 15:48:06 +0800
 categories: jekyll 更新
 ---
-你可以在 `_posts` 目录中找到此文章。对它进行编辑并重建网站，即可查看你的更改。你可以通过多种不同方式重建网站，但最常见的方式是运行命令 `jekyll serve`，这会启动 Web 服务器并在文件更新时自动重新生成你的网站。
+运行命令 `jekyll serve` 启动 Web 服务器，并在文件更新时自动重新生成网站。
 
 Jekyll 要求博文文件按照以下格式进行命名：
 
