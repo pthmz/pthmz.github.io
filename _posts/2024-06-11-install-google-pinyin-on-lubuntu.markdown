@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "在Lubuntu上安装Google拼音"
+title:  "在Ubuntu衍生版上安装Google拼音"
 date:   2024-06-11 22:00:00 +0800
 categories: os
 ---
+在 Lubuntu 24.04 和 Ubuntu Studio 24.04 上测试成功
 - 安装`Fcitx`和`Google拼音`
 ```bash
 sudo apt install fcitx fcitx-googlepinyin
