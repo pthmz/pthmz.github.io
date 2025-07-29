@@ -17,3 +17,5 @@ sudo apt install fcitx fcitx-googlepinyin
 	- 搜索Google Pinyin（不区分大小写）
 	- 选中，点击OK
 - 在任意输入框使用`Ctrl`+`Space`与英文输入法切换
+
+`fcitx` 似乎已经不更新，过时。`fcitx5`似乎是一个更好的替代品？
