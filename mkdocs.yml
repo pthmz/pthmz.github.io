@@ -1,0 +1,48 @@
+site_name: pthmz.github.io
+site_url: https://pthmz.github.io
+site_author: pthmz
+site_description: Personal blog and documentation
+
+repo_name: pthmz/pthmz.github.io
+repo_url: https://github.com/pthmz/pthmz.github.io
+
+nav:
+  - Home: index.md
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.mark
+
+plugins:
+  - search
