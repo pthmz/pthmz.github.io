@@ -8,11 +8,9 @@ repo_url: https://github.com/pthmz/pthmz.github.io
 
 nav:
   - 首页: index.md
-  - 博客:
-    - 2024-06-11: blog/2024-06-11-install-google-pinyin-on-ubuntu.md
-    - 2024-03-26:
-      - 嵌入式 Python pip 安装: blog/2024-03-26-install-pip-on-embed-python-windows.md
-      - 欢迎使用 Jekyll: blog/2024-03-26-welcome-to-jekyll.md
+  - 在 Ubuntu 上安装 Google 拼音: blog/2024-06-11-install-google-pinyin-on-ubuntu.md
+  - 嵌入式 Python pip 安装: blog/2024-03-26-install-pip-on-embed-python-windows.md
+  - 欢迎使用 Jekyll: blog/2024-03-26-welcome-to-jekyll.md
 
 theme:
   name: material
