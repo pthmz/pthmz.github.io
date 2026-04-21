@@ -1,29 +1,30 @@
 site_name: pthmz.github.io
 site_url: https://pthmz.github.io
 site_author: pthmz
-site_description: Personal blog and documentation
+site_description: 个人博客和文档
 
 repo_name: pthmz/pthmz.github.io
 repo_url: https://github.com/pthmz/pthmz.github.io
 
 nav:
-  - Home: index.md
+  - 首页: index.md
 
 theme:
   name: material
+  language: zh
   palette:
     - scheme: default
       primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-7
-        name: Switch to dark mode
+        name: 切换到暗色模式
     - scheme: slate
       primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-4
-        name: Switch to light mode
+        name: 切换到亮色模式
   features:
     - navigation.instant
     - navigation.tracking
