@@ -551,10 +551,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#uv" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        替代方案：使用 uv 管理依赖
+        注意事项
       
     </span>
   </a>
@@ -598,6 +598,7 @@
 <li><strong>保证代码可编辑性</strong>：所有代码保持原始的 <code>.py</code> 格式，随时可以修改和调试</li>
 <li><strong>不依赖 Git</strong>：对于不熟悉 Git 版本控制的用户友好</li>
 <li><strong>适合私有项目</strong>：特别适合编写不开源的私有项目，无需处理版本控制的复杂性</li>
+<li><strong>便于传播</strong>：可以在 Windows x64 系统间随意复制和执行，对大陆售卖的"挂机宝"（提供 RDP 的低价 NAT 虚拟机）等环境非常友好</li>
 </ul>
 <h2 id="_2">下载</h2>
 <ul>
@@ -648,16 +649,11 @@
 </code></pre></div></p>
 </li>
 </ol>
-<h2 id="uv">替代方案：使用 uv 管理依赖</h2>
-<p><strong>建议</strong>：如果网络条件允许，推荐使用 <a href="https://github.com/astral-sh/uv">uv</a> 作为依赖管理工具。uv 是一个现代化的 Python 包管理器，具有以下优势：</p>
+<h2 id="_5">注意事项</h2>
 <ul>
-<li><strong>速度快</strong>：比 pip 快数倍</li>
-<li><strong>稳定性高</strong>：依赖解析更可靠</li>
-<li><strong>一键下载</strong>：简化依赖管理流程</li>
+<li><strong>关于依赖管理</strong>：如果需要更现代的依赖管理工具，可以考虑 <a href="https://github.com/astral-sh/uv">uv</a>，但请注意 uv 更适合开源项目开发或生产环境部署，可能与本文"便于在不同系统间传播"的核心思想不完全一致</li>
+<li><strong>网络要求</strong>：安装依赖时可能需要访问境外服务器，建议配置代理以获得更好的下载速度</li>
 </ul>
-<p><strong>注意事项</strong>：
-- uv 需要先安装，可能依赖良好的网络环境（可能需要访问境外服务器）
-- 安装 uv 后，可以使用 <code>uv pip install</code> 来替代 <code>pip install</code> 命令</p>
 
 
 
