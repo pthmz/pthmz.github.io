@@ -41,6 +41,9 @@ theme:
     - content.tabs.link
     - header.autohide
   custom_dir: overrides
+  navigation:
+    previous: false
+    next: false
 
 markdown_extensions:
   - pymdownx.highlight:
