@@ -1,6 +1,8 @@
-# 在 Ubuntu 衍生版上安装 Google 拼音
-
-日期：2024-06-11
+---
+date: 2024-06-11
+categories: os
+---
+# 在 Ubuntu 上安装 Google 拼音
 
 在 Lubuntu 24.04 和 Ubuntu Studio 24.04 上测试成功
 

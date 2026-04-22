@@ -1,6 +1,8 @@
+---
+date: 2024-03-26
+categories: programming
+---
 # 嵌入式 Python Windows 版 pip 安装教程 (python-embed)
-
-日期：2024-03-26
 
 本文与嵌入式硬件开发无关
 
