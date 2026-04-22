@@ -4,54 +4,125 @@
 <style>
   /* Material Design 3 样式调整 */
   :root {
-    --md-radius: 12px;
+    --md-radius: 16px;
     --md-primary-fg-color: #6366f1;
     --md-primary-fg-color--light: #818cf8;
     --md-primary-fg-color--dark: #4f46e5;
-    --md-accent-fg-color: #6366f1;
-    --md-accent-fg-color--transparent: #6366f120;
+    --md-accent-fg-color: #ec4899;
+    --md-accent-fg-color--transparent: #ec489920;
     --md-text-font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    --md-code-font-family: 'Fira Code', 'Consolas', monospace;
+    --md-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --md-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  /* 亮色模式 */
+  [data-md-color-scheme="default"] {
+    --md-background-color: #f9fafb;
+    --md-surface-color: #ffffff;
+    --md-text-color: #1f2937;
+    --md-text-color--secondary: #4b5563;
+  }
+
+  /* 暗色模式 */
+  [data-md-color-scheme="slate"] {
+    --md-background-color: #111827;
+    --md-surface-color: #1f2937;
+    --md-text-color: #f3f4f6;
+    --md-text-color--secondary: #d1d5db;
   }
 
   /* 更现代的卡片效果 */
   .md-typeset {
-    --md-code-bg-color: #f9fafb;
+    --md-code-bg-color: #f3f4f6;
+  }
+
+  [data-md-color-scheme="slate"] .md-typeset {
+    --md-code-bg-color: #374151;
   }
 
   /* 更好的间距 */
   .md-content {
-    padding: 1.5rem;
+    padding: 2rem;
   }
 
   /* 更现代的按钮样式 */
   .md-button {
     border-radius: var(--md-radius);
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+
+  .md-button:hover {
+    transform: translateY(-1px);
+    box-shadow: var(--md-shadow);
   }
 
   /* 优化导航栏 */
   .md-header {
     background-color: var(--md-primary-fg-color);
+    box-shadow: var(--md-shadow);
+  }
+
+  .md-header__title {
+    font-weight: 600;
+    font-size: 1.2rem;
   }
 
   /* 优化代码块 */
   .md-typeset pre {
     border-radius: var(--md-radius);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: var(--md-shadow);
+    padding: 1.5rem;
   }
 
   /* 优化表格 */
   .md-typeset table {
     border-radius: var(--md-radius);
     overflow: hidden;
+    box-shadow: var(--md-shadow);
+  }
+
+  /* 优化卡片 */
+  .md-typeset .admonition {
+    border-radius: var(--md-radius);
+    box-shadow: var(--md-shadow);
+  }
+
+  /* 优化搜索框 */
+  .md-search__input {
+    border-radius: var(--md-radius);
+    padding: 0.5rem 1rem;
+    box-shadow: var(--md-shadow);
+  }
+
+  /* 优化标签 */
+  .md-typeset .md-tag {
+    border-radius: 9999px;
+    padding: 0.25rem 0.75rem;
   }
 
   /* 页脚样式 */
+  .md-footer {
+    background-color: var(--md-surface-color);
+    box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+
   .md-footer-meta {
     font-size: 0.8rem;
+    padding: 1rem;
   }
 
   .md-footer-meta__inner {
     justify-content: center;
+  }
+
+  /* 响应式调整 */
+  @media (max-width: 768px) {
+    .md-content {
+      padding: 1.5rem;
+    }
   }
 </style>
 {% endblock %}
