@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+<style>
+  /* Material Design 3 样式调整 */
+  :root {
+    --md-radius: 12px;
+    --md-primary-fg-color: #6366f1;
+    --md-primary-fg-color--light: #818cf8;
+    --md-primary-fg-color--dark: #4f46e5;
+    --md-accent-fg-color: #6366f1;
+    --md-accent-fg-color--transparent: #6366f120;
+    --md-text-font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* 更现代的卡片效果 */
+  .md-typeset {
+    --md-code-bg-color: #f9fafb;
+  }
+
+  /* 更好的间距 */
+  .md-content {
+    padding: 1.5rem;
+  }
+
+  /* 更现代的按钮样式 */
+  .md-button {
+    border-radius: var(--md-radius);
+  }
+
+  /* 优化导航栏 */
+  .md-header {
+    background-color: var(--md-primary-fg-color);
+  }
+
+  /* 优化代码块 */
+  .md-typeset pre {
+    border-radius: var(--md-radius);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+
+  /* 优化表格 */
+  .md-typeset table {
+    border-radius: var(--md-radius);
+    overflow: hidden;
+  }
+</style>
+{% endblock %}

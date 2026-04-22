@@ -31,11 +31,16 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.footer
     - navigation.sections
     - toc.integrate
     - search.suggest
     - search.highlight
     - content.code.copy
+    - content.tabs.link
+    - header.autohide
+  custom_dir: overrides
 
 markdown_extensions:
   - pymdownx.highlight:
