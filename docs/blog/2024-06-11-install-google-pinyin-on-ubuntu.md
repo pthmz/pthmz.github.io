@@ -4,7 +4,9 @@ categories: os
 ---
 # 在 Ubuntu 上安装 Google 拼音
 
-在 Lubuntu 24.04 和 Ubuntu Studio 24.04 上测试成功
+**测试成功的发行版**：
+- Lubuntu 24.04
+- Ubuntu Studio 24.04
 
 **说明**：虽然 fcitx5 是推荐的下一代输入法框架，但网络上仍存在大量基于 fcitx 4.x 的教程。本教程经过人工验证测试，在上述 Ubuntu 衍生版上可正常使用，对于需要参考 fcitx 4.x 配置的用户仍然有参考价值。
 
