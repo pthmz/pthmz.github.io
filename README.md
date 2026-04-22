@@ -21,7 +21,13 @@
    - 执行：`uv run mkdocs build`
    - 输出目录：`site/`
 
-3. **自动部署**：
+3. **GitHub Pages 设置**：
+   - 进入 GitHub 仓库 → **Settings** → **Pages**
+   - **Source** 选择：`Deploy from a branch`
+   - **Branch** 选择：`gh-pages`，右侧选择 `/(root)`
+   - 点击 **Save**
+
+4. **自动部署**：
    - 推送到 `main` 分支后，GitHub Actions 会自动：
      - 安装依赖
      - 构建网站
