@@ -8,8 +8,8 @@ repo_url: https://github.com/pthmz/pthmz.github.io
 
 nav:
   - 首页: index.md
-  - 在 Ubuntu 上安装 Google 拼音: blog/install-google-pinyin-on-ubuntu.md
-  - 嵌入式 Python pip 安装: blog/install-pip-on-embed-python-windows.md
+  - 在 Ubuntu 衍生版上安装 Google 拼音: blog/google-pinyin-installation-ubuntu-derivatives.md
+  - 嵌入式 Python pip 安装: blog/embed-python-pip-installation-windows.md
 
 theme:
   name: material

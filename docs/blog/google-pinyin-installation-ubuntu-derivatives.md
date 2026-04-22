@@ -2,7 +2,7 @@
 date: 2024-06-11
 categories: os
 ---
-# 在 Ubuntu 上安装 Google 拼音
+# 在 Ubuntu 衍生版上安装 Google 拼音
 
 **测试成功的发行版**：
 - Lubuntu 24.04
