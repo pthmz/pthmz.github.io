@@ -21,4 +21,4 @@ sudo apt install fcitx fcitx-googlepinyin
     - 选中，点击 OK
 - 在任意输入框使用 `Ctrl` + `Space` 与英文输入法切换
 
-`fcitx` 似乎已经不更新，过时。`fcitx5` 似乎是一个更好的替代品？
+**注意**：fcitx 4.x 已于 2024 年 5 月正式归档，停止上游维护。由于设计原因，fcitx4 无法在 Wayland 环境下运行。推荐迁移到 fcitx5，使用 `fcitx5-chinese-addons` 替代 `fcitx-googlepinyin`。
