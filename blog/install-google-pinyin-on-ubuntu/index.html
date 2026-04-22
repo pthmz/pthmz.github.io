@@ -12,11 +12,13 @@
         <meta name="author" content="pthmz">
       
       
-        <link rel="canonical" href="https://pthmz.github.io/blog/2024-03-26-install-pip-on-embed-python-windows/">
+        <link rel="canonical" href="https://pthmz.github.io/blog/install-google-pinyin-on-ubuntu/">
       
       
-        <link rel="prev" href="../2024-06-11-install-google-pinyin-on-ubuntu/">
+        <link rel="prev" href="../..">
       
+      
+        <link rel="next" href="../install-pip-on-embed-python-windows/">
       
       
         
@@ -30,7 +32,7 @@
     
     
       
-        <title>嵌入式 Python pip 安装 - pthmz.github.io</title>
+        <title>在 Ubuntu 上安装 Google 拼音 - pthmz.github.io</title>
       
     
     
@@ -126,7 +128,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#python-windows-pip-python-embed" class="md-skip">
+        <a href="#ubuntu-google" class="md-skip">
           跳转至
         </a>
       
@@ -162,7 +164,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              嵌入式 Python pip 安装
+              在 Ubuntu 上安装 Google 拼音
             
           </span>
         </div>
@@ -286,9 +288,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../2024-06-11-install-google-pinyin-on-ubuntu/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -305,11 +309,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../install-pip-on-embed-python-windows/" class="md-tabs__link">
         
   
   
@@ -406,10 +408,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../2024-06-11-install-google-pinyin-on-ubuntu/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    在 Ubuntu 上安装 Google 拼音
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -425,6 +454,37 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        安装步骤
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -433,19 +493,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../install-pip-on-embed-python-windows/" class="md-nav__link">
         
   
   
@@ -461,7 +512,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -486,38 +536,38 @@
   
 
 
-<h1 id="python-windows-pip-python-embed">嵌入式 Python Windows 版 pip 安装教程 (python-embed)</h1>
-<p>本文与嵌入式硬件开发无关</p>
-<p><strong>下载</strong></p>
-<p><code>python-3.xx.xx-embed-amd64.zip</code> 来自 <a href="https://www.python.org/">python.org</a></p>
-<p><code>get-pip.py</code> 来自 <a href="https://bootstrap.pypa.io/get-pip.py">https://bootstrap.pypa.io/get-pip.py</a></p>
-<p><strong>版本选择</strong>
-* 3.8, 3.9 可能出现 SSL 错误，解决办法：换网络、换节点
-* 3.10, 3.11, 3.12 正常</p>
-<p><strong>步骤</strong>
-1. 为 <code>PowerShell</code> 配置 <code>HTTP</code> / <code>Socks</code> / <code>Tun</code> 代理
-2.</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nb">PS </span><span class="n">C</span><span class="p">:\</span><span class="n">python</span><span class="p">-</span><span class="n">3</span><span class="p">.</span><span class="n">xx</span><span class="p">.</span><span class="n">xx-embed-amd64</span><span class="p">&gt;</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">.\</span><span class="n">python</span><span class="p">.</span><span class="n">exe</span> <span class="p">.\</span><span class="n">any-path</span><span class="p">\</span><span class="nb">get-pip</span><span class="p">.</span><span class="n">py</span>
-</code></pre></div>
-<ul>
-<li>自动创建了 <code>Lib</code>、<code>Scripts</code> 目录</li>
-<li>编辑 <code>python-3.xx.xx-embed-amd64</code> 目录下的 <code>python3xx.pth</code> 或 <code>python3xx._pth</code></li>
+<h1 id="ubuntu-google">在 Ubuntu 上安装 Google 拼音</h1>
+<p><strong>测试成功的发行版</strong>：
+- Lubuntu 24.04
+- Ubuntu Studio 24.04</p>
+<p><strong>说明</strong>：虽然 fcitx5 是推荐的下一代输入法框架，但网络上仍存在大量基于 fcitx 4.x 的教程。本教程经过人工验证测试，在上述 Ubuntu 衍生版上可正常使用，对于需要参考 fcitx 4.x 配置的用户仍然有参考价值。</p>
+<h2 id="_1">安装步骤</h2>
+<ol>
 <li>
-<p>找到内容 <code>import site</code> 所在行，去掉前面的 <code>#</code></p>
+<p><strong>安装 Fcitx 和 Google 拼音</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>fcitx<span class="w"> </span>fcitx-googlepinyin
+</code></pre></div></p>
 </li>
 <li>
-<p>pip 使用方法
-  *</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">PS </span><span class="n">C</span><span class="p">:\</span><span class="n">python</span><span class="p">-</span><span class="n">3</span><span class="p">.</span><span class="n">xx</span><span class="p">.</span><span class="n">xx-embed-amd64</span><span class="p">&gt;</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">.\</span><span class="n">python</span><span class="p">.</span><span class="n">exe</span> <span class="n">-m</span> <span class="n">pip</span>
-</code></pre></div>
-  *</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">PS </span><span class="n">C</span><span class="p">:\</span><span class="n">python</span><span class="p">-</span><span class="n">3</span><span class="p">.</span><span class="n">xx</span><span class="p">.</span><span class="n">xx-embed-amd64</span><span class="p">&gt;</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">.\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">pip</span><span class="p">.</span><span class="n">exe</span>
-</code></pre></div>
+<p><strong>Logout（登出）</strong></p>
 </li>
-</ul>
+<li>
+<p><strong>Login again（重新登录）</strong></p>
+</li>
+<li>
+<p><strong>Open Fcitx Configuration（进入 Fcitx 配置）</strong></p>
+</li>
+<li>Click <code>+</code>（点击 <code>+</code>）</li>
+<li>Uncheck <code>Only Show Current Language</code>（取消勾选 <code>Only Show Current Language</code>）</li>
+<li>Search for <code>Google Pinyin</code> (case-insensitive)（搜索 Google Pinyin，不区分大小写）</li>
+<li>
+<p>Select it and click <code>OK</code>（选中，点击 OK）</p>
+</li>
+<li>
+<p><strong>Use <code>Ctrl</code> + <code>Space</code> to toggle between English and Chinese input（在任意输入框使用 <code>Ctrl</code> + <code>Space</code> 与英文输入法切换）</strong></p>
+</li>
+</ol>
+<p><strong>注意</strong>：fcitx 4.x 已于 2024 年 5 月正式归档，停止上游维护。由于设计原因，fcitx4 无法在 Wayland 环境下运行。推荐迁移到 fcitx5，使用 <code>fcitx5-chinese-addons</code> 替代 <code>fcitx-googlepinyin</code>。</p>
 
 
 
@@ -552,7 +602,7 @@
       <nav class="md-footer__inner md-grid" aria-label="页脚" >
         
           
-          <a href="../2024-06-11-install-google-pinyin-on-ubuntu/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 在 Ubuntu 上安装 Google 拼音">
+          <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="上一页: 首页">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -562,11 +612,27 @@
                 上一页
               </span>
               <div class="md-ellipsis">
-                在 Ubuntu 上安装 Google 拼音
+                首页
               </div>
             </div>
           </a>
         
+        
+          
+          <a href="../install-pip-on-embed-python-windows/" class="md-footer__link md-footer__link--next" aria-label="下一页: 嵌入式 Python pip 安装">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                嵌入式 Python pip 安装
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
         
       </nav>
     
