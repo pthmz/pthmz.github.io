@@ -8,6 +8,8 @@ repo_url: https://github.com/pthmz/pthmz.github.io
 
 extra:
   generator: false
+  copyright: |
+    This work is dedicated to the public domain under <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank">CC0 1.0 Universal</a> (Public Domain)
 
 nav:
   - 首页: index.md
