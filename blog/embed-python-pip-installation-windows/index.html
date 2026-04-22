@@ -499,7 +499,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        下载
+        本文目的
       
     </span>
   </a>
@@ -510,7 +510,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        版本选择
+        下载
       
     </span>
   </a>
@@ -519,6 +519,17 @@
       
         <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        版本选择
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
         安装步骤
@@ -533,6 +544,17 @@
     <span class="md-ellipsis">
       
         pip 使用方法
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        替代方案：使用 uv 管理依赖
       
     </span>
   </a>
@@ -568,18 +590,26 @@
 
 
 <h1 id="python-windows-pip-python-embed">嵌入式 Python Windows 版 pip 安装教程 (python-embed)</h1>
-<p>本文与嵌入式硬件开发无关</p>
-<h2 id="_1">下载</h2>
+<p>本文与嵌入式硬件开发无关。</p>
+<h2 id="_1">本文目的</h2>
+<p>本文旨在向中文用户介绍如何在 Windows 上使用 <code>python-embed</code>（嵌入式 Python），以<strong>文件夹形式</strong>将 Python 运行环境（解释器）与 Python 程序一并打包。这种方式的优势：</p>
+<ul>
+<li><strong>无需编译为 exe 单文件</strong>：避免了使用打包工具生成的包含 <code>.pyc</code> 文件的可执行文件，这些文件无法被人类直接阅读或编辑</li>
+<li><strong>保证代码可编辑性</strong>：所有代码保持原始的 <code>.py</code> 格式，随时可以修改和调试</li>
+<li><strong>不依赖 Git</strong>：对于不熟悉 Git 版本控制的用户友好</li>
+<li><strong>适合私有项目</strong>：特别适合编写不开源的私有项目，无需处理版本控制的复杂性</li>
+</ul>
+<h2 id="_2">下载</h2>
 <ul>
 <li><code>python-3.xx.xx-embed-amd64.zip</code> 来自 <a href="https://www.python.org/">python.org</a></li>
 <li><code>get-pip.py</code> 来自 <a href="https://bootstrap.pypa.io/get-pip.py">https://bootstrap.pypa.io/get-pip.py</a></li>
 </ul>
-<h2 id="_2">版本选择</h2>
+<h2 id="_3">版本选择</h2>
 <ul>
 <li>3.8, 3.9 可能出现 SSL 错误，解决办法：换网络、换节点</li>
 <li>3.10, 3.11, 3.12 正常</li>
 </ul>
-<h2 id="_3">安装步骤</h2>
+<h2 id="_4">安装步骤</h2>
 <ol>
 <li>
 <p><strong>为 <code>PowerShell</code> 配置 <code>HTTP</code> / <code>Socks</code> / <code>Tun</code> 代理</strong></p>
@@ -618,6 +648,16 @@
 </code></pre></div></p>
 </li>
 </ol>
+<h2 id="uv">替代方案：使用 uv 管理依赖</h2>
+<p><strong>建议</strong>：如果网络条件允许，推荐使用 <a href="https://github.com/astral-sh/uv">uv</a> 作为依赖管理工具。uv 是一个现代化的 Python 包管理器，具有以下优势：</p>
+<ul>
+<li><strong>速度快</strong>：比 pip 快数倍</li>
+<li><strong>稳定性高</strong>：依赖解析更可靠</li>
+<li><strong>一键下载</strong>：简化依赖管理流程</li>
+</ul>
+<p><strong>注意事项</strong>：
+- uv 需要先安装，可能依赖良好的网络环境（可能需要访问境外服务器）
+- 安装 uv 后，可以使用 <code>uv pip install</code> 来替代 <code>pip install</code> 命令</p>
 
 
 
