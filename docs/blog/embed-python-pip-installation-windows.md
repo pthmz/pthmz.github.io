@@ -54,3 +54,15 @@ categories: programming
    PS C:\python-3.xx.xx-embed-amd64>
    .\Scripts\pip.exe
    ```
+
+## 替代方案：使用 uv 管理依赖
+
+**建议**：如果网络条件允许，推荐使用 [uv](https://github.com/astral-sh/uv) 作为依赖管理工具。uv 是一个现代化的 Python 包管理器，具有以下优势：
+
+- **速度快**：比 pip 快数倍
+- **稳定性高**：依赖解析更可靠
+- **一键下载**：简化依赖管理流程
+
+**注意事项**：
+- uv 需要先安装，可能依赖良好的网络环境（可能需要访问境外服务器）
+- 安装 uv 后，可以使用 `uv pip install` 来替代 `pip install` 命令
