@@ -6,6 +6,9 @@ site_description: pthmz 的博客
 repo_name: pthmz/pthmz.github.io
 repo_url: https://github.com/pthmz/pthmz.github.io
 
+extra:
+  generator: false
+
 nav:
   - 首页: index.md
   - 在 Ubuntu 衍生版上安装 Google 拼音: blog/google-pinyin-installation-ubuntu-derivatives.md
