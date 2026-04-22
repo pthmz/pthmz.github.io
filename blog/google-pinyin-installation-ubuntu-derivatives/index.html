@@ -73,7 +73,7 @@
     --md-primary-fg-color--dark: #4f46e5;
     --md-accent-fg-color: #ec4899;
     --md-accent-fg-color--transparent: #ec489920;
-    --md-text-font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    --md-text-font-family: 'Roboto', 'Inter', system-ui, -apple-system, sans-serif;
     --md-code-font-family: 'Fira Code', 'Consolas', monospace;
     --md-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --md-shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -95,6 +95,13 @@
     --md-text-color--secondary: #d1d5db;
   }
 
+  /* 全局样式 */
+  body {
+    font-family: var(--md-text-font-family);
+    background-color: var(--md-background-color);
+    transition: all 0.3s ease;
+  }
+
   /* 更现代的卡片效果 */
   .md-typeset {
     --md-code-bg-color: #f3f4f6;
@@ -114,18 +121,20 @@
     border-radius: var(--md-radius);
     padding: 0.5rem 1rem;
     font-weight: 500;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease-in-out;
   }
 
   .md-button:hover {
     transform: translateY(-1px);
     box-shadow: var(--md-shadow);
+    background-color: var(--md-primary-fg-color--light);
   }
 
   /* 优化导航栏 */
   .md-header {
     background-color: var(--md-primary-fg-color);
-    box-shadow: var(--md-shadow);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
   }
 
   .md-header__title {
@@ -133,11 +142,23 @@
     font-size: 1.2rem;
   }
 
+  /* 优化导航链接 */
+  .md-nav__link {
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease;
+  }
+
+  .md-nav__link:hover {
+    background-color: rgba(99, 102, 241, 0.1);
+  }
+
   /* 优化代码块 */
   .md-typeset pre {
     border-radius: var(--md-radius);
     box-shadow: var(--md-shadow);
     padding: 1.5rem;
+    transition: all 0.3s ease;
   }
 
   /* 优化表格 */
@@ -151,6 +172,7 @@
   .md-typeset .admonition {
     border-radius: var(--md-radius);
     box-shadow: var(--md-shadow);
+    transition: all 0.3s ease;
   }
 
   /* 优化搜索框 */
@@ -158,6 +180,7 @@
     border-radius: var(--md-radius);
     padding: 0.5rem 1rem;
     box-shadow: var(--md-shadow);
+    transition: all 0.3s ease;
   }
 
   /* 优化标签 */
@@ -186,6 +209,35 @@
     .md-content {
       padding: 1.5rem;
     }
+  }
+
+  /* 平滑滚动 */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* 动画效果 */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .md-typeset h1,
+  .md-typeset h2,
+  .md-typeset h3 {
+    animation: fadeIn 0.5s ease-out;
+  }
+
+  .md-typeset p,
+  .md-typeset ul,
+  .md-typeset ol {
+    animation: fadeIn 0.7s ease-out;
   }
 </style>
 
