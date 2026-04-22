@@ -44,5 +44,25 @@
     border-radius: var(--md-radius);
     overflow: hidden;
   }
+
+  /* 页脚样式 */
+  .md-footer-meta {
+    font-size: 0.8rem;
+  }
+
+  .md-footer-meta__inner {
+    justify-content: center;
+  }
 </style>
+{% endblock %}
+
+{% block footer %}
+  {{ super() }}
+  <div class="md-footer-meta">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        <p>Powered by <a href="https://github.com/features/actions" target="_blank">GitHub Actions</a> and <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+      </div>
+    </div>
+  </div>
 {% endblock %}
