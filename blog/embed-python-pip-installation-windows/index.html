@@ -614,14 +614,10 @@
 <p>可以观察到自动创建了 <code>Lib</code>、<code>Scripts</code> 目录</p>
 </li>
 <li>
-<p><strong>编辑 <code>python3xx.pth</code> 或 <code>python3xx._pth</code> 文件</strong></p>
+<p><strong>编辑配置文件</strong></p>
 </li>
-<li>
-<p>路径：<code>python-3.x.x-embed-amd64</code> 目录下</p>
-</li>
-<li>
-<p><strong>找到 <code>import site</code> 所在行，去掉前面的 <code>#</code></strong></p>
-</li>
+<li>在 <code>python-3.x.x-embed-amd64</code> 目录下找到 <code>python3xx.pth</code> 或 <code>python3xx._pth</code> 文件（具体文件名取决于 Python 版本）</li>
+<li>打开文件，找到 <code>#import site</code> 所在行，去掉前面的 <code>#</code>，改为 <code>import site</code></li>
 </ol>
 <h2 id="pip">pip 使用方法</h2>
 <ol>
