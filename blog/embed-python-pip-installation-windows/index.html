@@ -595,17 +595,22 @@
 <p><strong>解压</strong>：将 <code>python-3.x.x-embed-amd64.zip</code> 解压到任意目录，建议使用压缩软件的"以文件名创建文件夹"功能，会自动创建 <code>python-3.x.x-embed-amd64</code> 文件夹。</p>
 <h2 id="_4">安装步骤</h2>
 <ol>
-<li><strong>为 <code>PowerShell</code> 配置 <code>HTTP</code> / <code>Socks</code> / <code>Tun</code> 代理</strong></li>
+<li><strong>配置网络代理（如需要）</strong></li>
 </ol>
+<p><strong>HTTP/Socks 代理</strong>：</p>
 <p>临时设置代理环境变量（仅对当前会话有效）：
    <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c"># HTTP 代理</span>
 <a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nv">$env:HTTP_PROXY</span><span class="p">=</span><span class="s2">&quot;http://proxy.example.com:8080&quot;</span>
 <a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nv">$env:HTTPS_PROXY</span><span class="p">=</span><span class="s2">&quot;http://proxy.example.com:8080&quot;</span>
 <a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c"># Socks 代理</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c"># Socks 代理  </span>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nv">$env:HTTP_PROXY</span><span class="p">=</span><span class="s2">&quot;socks5://proxy.example.com:1080&quot;</span>
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nv">$env:HTTPS_PROXY</span><span class="p">=</span><span class="s2">&quot;socks5://proxy.example.com:1080&quot;</span>
 </code></pre></div></p>
+<p><strong>Tun 模式代理</strong>：
+   - 在您使用的代理客户端中找到 Tun/Tunnel/虚拟网卡相关选项并启用
+   - 不同客户端的操作方式各异，请参考各自软件的文档
+   - 启用后通常无需额外配置环境变量</p>
 <ol>
 <li><strong>运行 get-pip.py</strong>
    <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Set-Location</span> <span class="s2">&quot;PATH TO YOUR LOCATION\python-3.x.x-embed-amd64&quot;</span>
