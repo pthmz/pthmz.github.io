@@ -20,7 +20,7 @@ categories: os
 
 2. **Logout（登出）**
 
-3. **Login again（重新登录）**
+3. **Login（登录）**
 
 4. **Open Fcitx Configuration（进入 Fcitx 配置）**
    - Click `+`（点击 `+`）
