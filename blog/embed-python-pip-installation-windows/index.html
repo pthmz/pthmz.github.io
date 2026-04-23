@@ -609,15 +609,25 @@ categories: programming</p>
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c"># Socks 代理</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nv">$env:HTTP_PROXY</span><span class="p">=</span><span class="s2">&quot;socks5://proxy.example.com:1080&quot;</span>
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nv">$env:HTTPS_PROXY</span><span class="p">=</span><span class="s2">&quot;socks5://proxy.example.com:1080&quot;</span>
-</code></pre></div>
-2. <strong>运行 get-pip.py</strong>
+</code></pre></div></p>
+<ol>
+<li><strong>运行 get-pip.py</strong>
    <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Set-Location</span> <span class="s2">&quot;PATH TO YOUR LOCATION\python-3.x.x-embed-amd64&quot;</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">.\</span><span class="n">python</span><span class="p">.</span><span class="n">exe</span> <span class="p">.\</span><span class="n">any-path</span><span class="p">\</span><span class="nb">get-pip</span><span class="p">.</span><span class="n">py</span>
-</code></pre></div>
-   - 可以观察到自动创建了 <code>Lib</code>、<code>Scripts</code> 目录
-3. <strong>编辑</strong> <strong><code>python3xx.pth</code></strong> <strong>或</strong> <strong><code>python3xx._pth</code></strong> <strong>文件</strong>
-   - 路径：<code>python-3.x.x-embed-amd64</code> 目录下
-4. <strong>找到</strong> <strong><code>import site</code></strong> <strong>所在行，去掉前面的</strong> <strong><code>#</code></strong></p>
+</code></pre></div></li>
+<li>
+<p>可以观察到自动创建了 <code>Lib</code>、<code>Scripts</code> 目录</p>
+</li>
+<li>
+<p><strong>编辑</strong> <strong><code>python3xx.pth</code></strong> <strong>或</strong> <strong><code>python3xx._pth</code></strong> <strong>文件</strong></p>
+</li>
+<li>
+<p>路径：<code>python-3.x.x-embed-amd64</code> 目录下</p>
+</li>
+<li>
+<p><strong>找到</strong> <strong><code>import site</code></strong> <strong>所在行，去掉前面的</strong> <strong><code>#</code></strong></p>
+</li>
+</ol>
 <h2 id="pip">pip 使用方法</h2>
 <ol>
 <li>
