@@ -31,18 +31,25 @@ categories: programming
 
 ## 安装步骤
 
-1. **为 `PowerShell` 配置 `HTTP` / `Socks` / `Tun` 代理**
+1. **配置网络代理（如需要）**
 
+   **HTTP/Socks 代理**：
+   
    临时设置代理环境变量（仅对当前会话有效）：
    ```powershell
    # HTTP 代理
    $env:HTTP_PROXY="http://proxy.example.com:8080"
    $env:HTTPS_PROXY="http://proxy.example.com:8080"
 
-   # Socks 代理
+   # Socks 代理  
    $env:HTTP_PROXY="socks5://proxy.example.com:1080"
    $env:HTTPS_PROXY="socks5://proxy.example.com:1080"
    ```
+
+   **Tun 模式代理**：
+   - 在您使用的代理客户端中找到 Tun/Tunnel/虚拟网卡相关选项并启用
+   - 不同客户端的操作方式各异，请参考各自软件的文档
+   - 启用后通常无需额外配置环境变量
 
 2. **运行 get-pip.py**
    ```powershell
