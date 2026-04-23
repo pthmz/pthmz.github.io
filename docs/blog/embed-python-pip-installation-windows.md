@@ -10,10 +10,10 @@ categories: programming
 
 本教程已在以下操作系统上测试成功：
 
-- Windows 10
 - Windows 11
-- Windows Server 2012 R2
+- Windows 10
 - Windows Server 2016
+- Windows Server 2012 R2
 
 ## 版本选择
 
