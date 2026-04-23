@@ -48,7 +48,7 @@ categories: programming
    PS C:\python-3.xx.xx-embed-amd64>
    .\python.exe .\any-path\get-pip.py
    ```
-   - 自动创建了 `Lib`、`Scripts` 目录
+   - 可以观察到自动创建了 `Lib`、`Scripts` 目录
 
 3. **编辑 `python3xx.pth` 或 `python3xx._pth` 文件**
    - 路径：`python-3.xx.xx-embed-amd64` 目录下
