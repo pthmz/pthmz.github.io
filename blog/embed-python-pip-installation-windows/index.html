@@ -454,7 +454,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        本文目的
+        操作系统支持
       
     </span>
   </a>
@@ -465,7 +465,7 @@
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        下载
+        版本选择
       
     </span>
   </a>
@@ -476,7 +476,7 @@
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        版本选择
+        下载
       
     </span>
   </a>
@@ -509,7 +509,7 @@
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        操作系统支持
+        本文目的
       
     </span>
   </a>
@@ -555,27 +555,17 @@
   
 
 
-<hr />
-<p>date: 2024-03-26
-categories: programming</p>
-<hr />
 <h1 id="python-windows-pip-python-embed">嵌入式 Python Windows 版 pip 安装教程 (python-embed)</h1>
 <p>本文与嵌入式硬件开发无关。</p>
-<h2 id="_1">本文目的</h2>
-<p>本文旨在向中文用户介绍如何在 Windows 上使用 <code>python-embed</code>（嵌入式 Python），以<strong>文件夹形式</strong>将 Python 运行环境（解释器）与 Python 程序一并打包。这种方式的优势：</p>
+<h2 id="_1">操作系统支持</h2>
+<p>本教程已在以下操作系统上测试成功：</p>
 <ul>
-<li><strong>无需编译为 exe 单文件</strong>：避免了使用打包工具生成的包含 <code>.pyc</code> 文件的可执行文件，这些文件无法被人类直接阅读或编辑</li>
-<li><strong>保证代码可编辑性</strong>：所有代码保持原始的 <code>.py</code> 格式，随时可以修改和调试</li>
-<li><strong>不依赖 Git</strong>：对于不熟悉 Git 版本控制的用户友好</li>
-<li><strong>适合私有项目</strong>：特别适合编写不开源的私有项目，无需处理版本控制的复杂性</li>
-<li><strong>便于传播</strong>：可以在 Windows x64 系统间随意复制和执行，对大陆售卖的"挂机宝"（提供 RDP 的低价 NAT 虚拟机）等环境非常友好</li>
+<li>Windows 10</li>
+<li>Windows 11</li>
+<li>Windows Server 2012 R2</li>
+<li>Windows Server 2016</li>
 </ul>
-<h2 id="_2">下载</h2>
-<ul>
-<li><code>python-3.x.x-embed-amd64.zip</code> 来自 <a href="https://www.python.org/">python.org</a></li>
-<li><code>get-pip.py</code> 来自 <a href="https://bootstrap.pypa.io/get-pip.py">https://bootstrap.pypa.io/get-pip.py</a></li>
-</ul>
-<h2 id="_3">版本选择</h2>
+<h2 id="_2">版本选择</h2>
 <table>
 <thead>
 <tr>
@@ -597,9 +587,14 @@ categories: programming</p>
 </tr>
 </tbody>
 </table>
+<h2 id="_3">下载</h2>
+<ul>
+<li><code>python-3.x.x-embed-amd64.zip</code> 来自 <a href="https://www.python.org/">python.org</a></li>
+<li><code>get-pip.py</code> 来自 <a href="https://bootstrap.pypa.io/get-pip.py">https://bootstrap.pypa.io/get-pip.py</a></li>
+</ul>
 <h2 id="_4">安装步骤</h2>
 <ol>
-<li><strong>为</strong> <strong><code>PowerShell</code></strong> <strong>配置</strong> <strong><code>HTTP</code></strong> <strong>/</strong> <strong><code>Socks</code></strong> <strong>/</strong> <strong><code>Tun</code></strong> <strong>代理</strong></li>
+<li><strong>为 <code>PowerShell</code> 配置 <code>HTTP</code> / <code>Socks</code> / <code>Tun</code> 代理</strong></li>
 </ol>
 <p>临时设置代理环境变量（仅对当前会话有效）：
    <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c"># HTTP 代理</span>
@@ -619,13 +614,13 @@ categories: programming</p>
 <p>可以观察到自动创建了 <code>Lib</code>、<code>Scripts</code> 目录</p>
 </li>
 <li>
-<p><strong>编辑</strong> <strong><code>python3xx.pth</code></strong> <strong>或</strong> <strong><code>python3xx._pth</code></strong> <strong>文件</strong></p>
+<p><strong>编辑 <code>python3xx.pth</code> 或 <code>python3xx._pth</code> 文件</strong></p>
 </li>
 <li>
 <p>路径：<code>python-3.x.x-embed-amd64</code> 目录下</p>
 </li>
 <li>
-<p><strong>找到</strong> <strong><code>import site</code></strong> <strong>所在行，去掉前面的</strong> <strong><code>#</code></strong></p>
+<p><strong>找到 <code>import site</code> 所在行，去掉前面的 <code>#</code></strong></p>
 </li>
 </ol>
 <h2 id="pip">pip 使用方法</h2>
@@ -643,13 +638,14 @@ categories: programming</p>
 </code></pre></div></p>
 </li>
 </ol>
-<h2 id="_5">操作系统支持</h2>
-<p>本教程已在以下操作系统上测试成功：</p>
+<h2 id="_5">本文目的</h2>
+<p>本文旨在向中文用户介绍如何在 Windows 上使用 <code>python-embed</code>（嵌入式 Python），以<strong>文件夹形式</strong>将 Python 运行环境（解释器）与 Python 程序一并打包。这种方式的优势：</p>
 <ul>
-<li>Windows 10</li>
-<li>Windows 11</li>
-<li>Windows Server 2012 R2</li>
-<li>Windows Server 2016</li>
+<li><strong>无需编译为 exe 单文件</strong>：避免了使用打包工具生成的包含 <code>.pyc</code> 文件的可执行文件，这些文件无法被人类直接阅读或编辑</li>
+<li><strong>保证代码可编辑性</strong>：所有代码保持原始的 <code>.py</code> 格式，随时可以修改和调试</li>
+<li><strong>不依赖 Git</strong>：对于不熟悉 Git 版本控制的用户友好</li>
+<li><strong>适合私有项目</strong>：特别适合编写不开源的私有项目，无需处理版本控制的复杂性</li>
+<li><strong>便于传播</strong>：可以在 Windows x64 系统间随意复制和执行，对大陆售卖的"挂机宝"（提供 RDP 的低价 NAT 虚拟机）等环境非常友好</li>
 </ul>
 <h2 id="_6">注意事项</h2>
 <ul>
@@ -662,6 +658,9 @@ categories: programming</p>
 
 
 
+
+  
+  
 
 
 
