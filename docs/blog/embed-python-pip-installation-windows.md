@@ -44,14 +44,17 @@ categories: programming
    $env:HTTP_PROXY="socks5://proxy.example.com:1080"
    $env:HTTPS_PROXY="socks5://proxy.example.com:1080"
    ```
+
 2. **运行 get-pip.py**
    ```powershell
    Set-Location "PATH TO YOUR LOCATION\python-3.x.x-embed-amd64"
    .\python.exe .\any-path\get-pip.py
    ```
    - 可以观察到自动创建了 `Lib`、`Scripts` 目录
+
 3. **编辑** **`python3xx.pth`** **或** **`python3xx._pth`** **文件**
    - 路径：`python-3.x.x-embed-amd64` 目录下
+   
 4. **找到** **`import site`** **所在行，去掉前面的** **`#`**
 
 ## pip 使用方法
