@@ -24,8 +24,8 @@ categories: programming
 
 ## 下载
 
-- `python-3.x.x-embed-amd64.zip` 来自 [python.org](https://www.python.org/)
-- `get-pip.py` 来自 <https://bootstrap.pypa.io/get-pip.py>
+- 从 [python.org](https://www.python.org/) 下载 `python-3.x.x-embed-amd64.zip`
+- 从 <https://bootstrap.pypa.io/get-pip.py> 下载 `get-pip.py`
 
 ## 安装步骤
 
