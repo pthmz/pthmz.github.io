@@ -555,6 +555,10 @@
   
 
 
+<hr />
+<p>date: 2024-03-26
+categories: programming</p>
+<hr />
 <h1 id="python-windows-pip-python-embed">嵌入式 Python Windows 版 pip 安装教程 (python-embed)</h1>
 <p>本文与嵌入式硬件开发无关。</p>
 <h2 id="_1">本文目的</h2>
@@ -568,7 +572,7 @@
 </ul>
 <h2 id="_2">下载</h2>
 <ul>
-<li><code>python-3.xx.xx-embed-amd64.zip</code> 来自 <a href="https://www.python.org/">python.org</a></li>
+<li><code>python-3.x.x-embed-amd64.zip</code> 来自 <a href="https://www.python.org/">python.org</a></li>
 <li><code>get-pip.py</code> 来自 <a href="https://bootstrap.pypa.io/get-pip.py">https://bootstrap.pypa.io/get-pip.py</a></li>
 </ul>
 <h2 id="_3">版本选择</h2>
@@ -595,7 +599,7 @@
 </table>
 <h2 id="_4">安装步骤</h2>
 <ol>
-<li><strong>为 <code>PowerShell</code> 配置 <code>HTTP</code> / <code>Socks</code> / <code>Tun</code> 代理</strong></li>
+<li><strong>为</strong> <strong><code>PowerShell</code></strong> <strong>配置</strong> <strong><code>HTTP</code></strong> <strong>/</strong> <strong><code>Socks</code></strong> <strong>/</strong> <strong><code>Tun</code></strong> <strong>代理</strong></li>
 </ol>
 <p>临时设置代理环境变量（仅对当前会话有效）：
    <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c"># HTTP 代理</span>
@@ -605,39 +609,25 @@
 <a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="c"># Socks 代理</span>
 <a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nv">$env:HTTP_PROXY</span><span class="p">=</span><span class="s2">&quot;socks5://proxy.example.com:1080&quot;</span>
 <a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nv">$env:HTTPS_PROXY</span><span class="p">=</span><span class="s2">&quot;socks5://proxy.example.com:1080&quot;</span>
-</code></pre></div></p>
-<ol>
-<li><strong>运行 get-pip.py</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">PS </span><span class="n">C</span><span class="p">:\</span><span class="n">python</span><span class="p">-</span><span class="n">3</span><span class="p">.</span><span class="n">xx</span><span class="p">.</span><span class="n">xx-embed-amd64</span><span class="p">&gt;</span>
+</code></pre></div>
+2. <strong>运行 get-pip.py</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">cd </span><span class="n">C</span><span class="p">:\</span><span class="n">python</span><span class="p">-</span><span class="n">3</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="n">x-embed-amd64</span>
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">.\</span><span class="n">python</span><span class="p">.</span><span class="n">exe</span> <span class="p">.\</span><span class="n">any-path</span><span class="p">\</span><span class="nb">get-pip</span><span class="p">.</span><span class="n">py</span>
-</code></pre></div></li>
-<li>
-<p>可以观察到自动创建了 <code>Lib</code>、<code>Scripts</code> 目录</p>
-</li>
-<li>
-<p><strong>编辑 <code>python3xx.pth</code> 或 <code>python3xx._pth</code> 文件</strong></p>
-</li>
-<li>
-<p>路径：<code>python-3.xx.xx-embed-amd64</code> 目录下</p>
-</li>
-<li>
-<p><strong>找到 <code>import site</code> 所在行，去掉前面的 <code>#</code></strong></p>
-</li>
-</ol>
+</code></pre></div>
+   - 可以观察到自动创建了 <code>Lib</code>、<code>Scripts</code> 目录
+3. <strong>编辑</strong> <strong><code>python3xx.pth</code></strong> <strong>或</strong> <strong><code>python3xx._pth</code></strong> <strong>文件</strong>
+   - 路径：<code>python-3.x.x-embed-amd64</code> 目录下
+4. <strong>找到</strong> <strong><code>import site</code></strong> <strong>所在行，去掉前面的</strong> <strong><code>#</code></strong></p>
 <h2 id="pip">pip 使用方法</h2>
 <ol>
-<li>
-<p><strong>使用 Python 模块方式</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">PS </span><span class="n">C</span><span class="p">:\</span><span class="n">python</span><span class="p">-</span><span class="n">3</span><span class="p">.</span><span class="n">xx</span><span class="p">.</span><span class="n">xx-embed-amd64</span><span class="p">&gt;</span>
+<li><strong>使用 Python 模块方式</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">cd </span><span class="n">C</span><span class="p">:\</span><span class="n">python</span><span class="p">-</span><span class="n">3</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="n">x-embed-amd64</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">.\</span><span class="n">python</span><span class="p">.</span><span class="n">exe</span> <span class="n">-m</span> <span class="n">pip</span>
-</code></pre></div></p>
-</li>
-<li>
-<p><strong>使用可执行文件方式</strong>
-   <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">PS </span><span class="n">C</span><span class="p">:\</span><span class="n">python</span><span class="p">-</span><span class="n">3</span><span class="p">.</span><span class="n">xx</span><span class="p">.</span><span class="n">xx-embed-amd64</span><span class="p">&gt;</span>
+</code></pre></div></li>
+<li><strong>使用可执行文件方式</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nb">cd </span><span class="n">C</span><span class="p">:\</span><span class="n">python</span><span class="p">-</span><span class="n">3</span><span class="p">.</span><span class="n">x</span><span class="p">.</span><span class="n">x-embed-amd64</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">.\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">pip</span><span class="p">.</span><span class="n">exe</span>
-</code></pre></div></p>
-</li>
+</code></pre></div></li>
 </ol>
 <h2 id="_5">操作系统支持</h2>
 <p>本教程已在以下操作系统上测试成功：</p>
@@ -658,9 +648,6 @@
 
 
 
-
-  
-  
 
 
 
