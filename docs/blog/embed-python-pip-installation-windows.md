@@ -49,10 +49,9 @@ categories: programming
    ```
    - 可以观察到自动创建了 `Lib`、`Scripts` 目录
 
-3. **编辑 `python3xx.pth` 或 `python3xx._pth` 文件**
-   - 路径：`python-3.x.x-embed-amd64` 目录下
-   
-4. **找到 `import site` 所在行，去掉前面的 `#`**
+3. **编辑配置文件**
+   - 在 `python-3.x.x-embed-amd64` 目录下找到 `python3xx.pth` 或 `python3xx._pth` 文件（具体文件名取决于 Python 版本）
+   - 打开文件，找到 `#import site` 所在行，去掉前面的 `#`，改为 `import site`
 
 ## pip 使用方法
 
