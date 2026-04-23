@@ -27,6 +27,8 @@ categories: programming
 - 从 [python.org](https://www.python.org/) 下载 `python-3.x.x-embed-amd64.zip`
 - 从 <https://bootstrap.pypa.io/get-pip.py> 下载 `get-pip.py`
 
+**解压**：将 `python-3.x.x-embed-amd64.zip` 解压到任意目录，建议使用压缩软件的"以文件名创建文件夹"功能，会自动创建 `python-3.x.x-embed-amd64` 文件夹。
+
 ## 安装步骤
 
 1. **为 `PowerShell` 配置 `HTTP` / `Socks` / `Tun` 代理**
