@@ -46,7 +46,7 @@ categories: programming
    ```
 2. **运行 get-pip.py**
    ```powershell
-   cd C:\python-3.x.x-embed-amd64
+   Set-Location C:\python-3.x.x-embed-amd64
    .\python.exe .\any-path\get-pip.py
    ```
    - 可以观察到自动创建了 `Lib`、`Scripts` 目录
@@ -58,12 +58,13 @@ categories: programming
 
 1. **使用 Python 模块方式**
    ```powershell
-   cd C:\python-3.x.x-embed-amd64
+   Set-Location C:\python-3.x.x-embed-amd64
    .\python.exe -m pip
    ```
+
 2. **使用可执行文件方式**
    ```powershell
-   cd C:\python-3.x.x-embed-amd64
+   Set-Location C:\python-3.x.x-embed-amd64
    .\Scripts\pip.exe
    ```
 
