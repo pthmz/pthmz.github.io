@@ -56,6 +56,13 @@ categories: programming
    .\Scripts\pip.exe
    ```
 
+## 操作系统支持
+
+本教程已在以下操作系统上测试成功：
+
+- Windows Server 2012 R2
+- Windows Server 2016
+
 ## 注意事项
 
 - **关于依赖管理**：如果需要更现代的依赖管理工具，可以考虑 [uv](https://github.com/astral-sh/uv)，但请注意 uv 更适合开源项目开发或生产环境部署，可能与本文"便于在不同系统间传播"的核心思想不完全一致
